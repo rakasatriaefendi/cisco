@@ -54,7 +54,7 @@ You need to route each LAN room, the server room, and the access point to ensure
 # How to Run/Cara Menjalankannya
 
 ## Indonesia:
-Instal [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) dan kemudian Anda dapat membuka RIP dengan Web Server.pkt.
+Instal [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) dan kemudian Anda dapat membuka [RIP dengan Web Server.pkt](https://github.com/xurobaebae/cisco/tree/main/main%20file).
 
 ## English:
-Install [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) and then you can open the RIP with a Web Server.pkt.
+Install [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) and then you can open the [RIP dengan Web Server.pkt](https://github.com/xurobaebae/cisco/tree/main/main%20file).
