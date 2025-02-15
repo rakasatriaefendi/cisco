@@ -7,7 +7,7 @@ Saya membuat simulasi jaringan ini untuk proyek di perkuliahan menggunakan Cisco
 I created this network simulation for a college project using Cisco Packet Tracer. In this Packet Tracer simulation, I used RIP to route several networks. With this, I hope to help my peers learn the RIP concept using the simulation I have made.
 
 # The network I designed
-![image](https://github.com/user-attachments/assets/b6ff728e-23af-4f68-95a1-8a29cabf90cb)
+![image](https://github.com/rakasatriaefendi/cisco/blob/main/Projek-IoT-dengan-packet-tracer/Topologi%20IoT.png?raw=true)
 
 # Problem Statement/Pernyataan Masalah
 
