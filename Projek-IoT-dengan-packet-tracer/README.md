@@ -1,61 +1,80 @@
-# Network RIP Simulation with a Web Server
+# IoT Simulation with Cisco Packet Tracer
 
 ## Indonesia:
-Saya membuat simulasi jaringan ini untuk proyek di perkuliahan menggunakan Cisco Packet Tracer. Pada simulasi Packet Tracer ini saya menggunakan RIP untuk merutekan beberapa jaringan. Dengan ini saya berharap dapat membantu rekan-rekan saya dalam mempelajari konsep RIP dengan menggunakan simulasi yang telah saya buat.
+
+Saya membuat simulasi jaringan ini untuk proyek di perkuliahan menggunakan Cisco Packet Tracer. Pada simulasi ini, saya mengimplementasikan berbagai perangkat IoT yang terhubung dalam sebuah infrastruktur rumah pintar (smart home). Dengan ini, saya berharap dapat membantu rekan-rekan saya dalam mempelajari konsep jaringan IoT dan bagaimana perangkat-perangkat ini dapat dikonfigurasi untuk bekerja secara efisien.
 
 ## English:
-I created this network simulation for a college project using Cisco Packet Tracer. In this Packet Tracer simulation, I used RIP to route several networks. With this, I hope to help my peers learn the RIP concept using the simulation I have made.
+
+I created this network simulation for a college project using Cisco Packet Tracer. In this simulation, I implemented various IoT devices connected within a smart home infrastructure. With this, I hope to help my peers learn the concept of IoT networking and how these devices can be configured to work efficiently.
+
+---
 
 # The network I designed
+
 ![image](https://github.com/rakasatriaefendi/cisco/blob/main/Projek-IoT-dengan-packet-tracer/Topologi%20IoT.png?raw=true)
+
+---
 
 # Problem Statement/Pernyataan Masalah
 
 ## Indonesia:
-Bayangkan Anda adalah seorang teknisi jaringan yang ditugaskan untuk mengonfigurasi jaringan di sebuah universitas. Universitas ini memiliki tiga ruangan yang masing-masing terhubung melalui Local Area Network (LAN), satu ruangan server yang berisi layanan web, dan satu area dengan access point. Tugas Anda adalah untuk merancang dan mengimplementasikan sebuah infrastruktur jaringan dimana setiap ruangan LAN memiliki empat PC yang terhubung ke switch, dan switch tersebut terhubung ke router untuk memastikan konektivitas antar ruangan serta dengan jaringan eksternal. Ruangan-ruangan tersebut diberi label sebagai berikut:
 
-Ruangan Cyan dengan alamat IP 192.168.1.0/24
-Ruangan Green dengan alamat IP 192.169.2.0/24
-Ruangan Yellow dengan alamat IP 192.168.3.0/24
-Ruangan server diberi label Pink dengan alamat IP 192.168.4.0/24.
+Bayangkan Anda sedang merancang sistem rumah pintar (smart home) yang dilengkapi dengan berbagai perangkat IoT. Sistem ini harus memungkinkan kontrol otomatis dan pemantauan dari jarak jauh. Beberapa perangkat yang diimplementasikan meliputi:
 
-Selain itu, ada satu access point yang harus dapat tersambung ke jaringan ini dan memiliki perangkat yang dapat mengakses server.
+1. **Sensor Gerak** untuk mendeteksi keberadaan orang.
+2. **Kamera CCTV** untuk pengawasan keamanan.
+3. **Lampu Pintar** yang dapat dikontrol melalui jaringan.
+4. **Smart Door dengan RFID** untuk akses yang lebih aman.
+5. **Detektor Asap** yang dapat memberikan peringatan jika ada kebakaran.
+6. **Smart Fan** yang bisa dikendalikan secara otomatis berdasarkan suhu ruangan.
 
-Anda harus merutekan masing-masing ruangan LAN, server, dan access point agar bisa saling terkoneksi secara efisien dan aman menggunakan metode Routing Information Protocol (RIP). Di akhir, uji konektivitas menggunakan Simple PDU.
+Tugas Anda adalah menghubungkan perangkat-perangkat ini dalam jaringan menggunakan Cisco Packet Tracer dan memastikan komunikasi antar perangkat serta kontrol jarak jauh dapat dilakukan dengan baik.
 
 ## English:
-Imagine you are a network technician tasked with configuring a network for a university setting that includes three rooms connected via Local Area Networks (LAN), one server room containing web services, and one section utilizing an access point. Your assignment is to design and implement a network infrastructure where each LAN room has four PCs connected to switches, which in turn are connected to routers ensuring inter-room connectivity as well as external network connectivity. The rooms are labeled as follows:
 
-Cyan Room with an IP address of 192.168.1.0/24
-Green Room with an IP address of 192.169.2.0/24
-Yellow Room with an IP address of 192.168.3.0/24
-The server room is labeled Pink with an IP address of 192.168.4.0/24.
+Imagine you are designing a smart home system equipped with various IoT devices. This system must enable automatic control and remote monitoring. Some of the implemented devices include:
 
-Additionally, there is one access point that must also be connected to this network and have a device that can access the server.
+1. **Motion Sensors** to detect human presence.
+2. **CCTV Cameras** for security monitoring.
+3. **Smart Lights** that can be controlled over the network.
+4. **Smart Door with RFID** for secure access.
+5. **Smoke Detectors** that can alert users in case of fire.
+6. **Smart Fan** that can be controlled automatically based on room temperature.
 
-You need to route each LAN room, the server room, and the access point to ensure they can all communicate with each other efficiently and securely using the Routing Information Protocol (RIP). Finally, test the connectivity using Simple PDU.
+Your task is to connect these devices into a network using Cisco Packet Tracer and ensure proper communication and remote control functionality.
+
+---
 
 # Constraints/Ketentuan
 
 ## Indonesia:
-1. Gunakan kabel straight-through untuk menghubungkan PC ke switch atau switch ke router. Gunakan kabel cross-over untuk menghubungkan router ke router atau server ke router sesuai kebutuhan.
-2. Kamu bisa menggunakan Server-PT, PC-PT, Router 1841, Router-PT-Empty (agar bisa menambahkan slot fast ethernet sesuai kebutuhan di bagian physical), Switch 2950-24, switch-pt, dan accesspoint-PT.
-3. Kamu harus memberikan IP ke semua PC menggunakan IP statis.
-4. Kamu harus menggunakan CLI untuk mengkonfigurasi RIP di router, atau jika sudah sangat kesulitan, kamu diberikan kemudahan untuk menggunakan GUI.
-5. Kamu bisa memodifikasi web yang ada di server. Atau kamu bisa menggunakan kode ku yang ada di RIP with a Web Server.pkt di bagian konfigurasi server.
+
+1. Gunakan **Wi-Fi** dan **Ethernet** sesuai kebutuhan untuk menghubungkan perangkat IoT.
+2. Konfigurasikan **server** untuk menangani data dari perangkat IoT.
+3. Pastikan setiap perangkat memiliki alamat IP yang unik.
+4. Gunakan **MQTT atau HTTP** sebagai protokol komunikasi jika memungkinkan.
+5. Gunakan **CLI** atau **GUI** dalam Packet Tracer untuk mengonfigurasi perangkat.
+6. Pastikan setiap perangkat dapat dikendalikan dari **smartphone atau laptop** yang terhubung ke jaringan.
 
 ## English:
-1. Use straight-through cables to connect PCs to switches or switches to routers. Use cross-over cables to connect routers to routers or servers to routers as needed.
-2. You can use Server-PT, PC-PT, Router 1841, Router-PT-Empty (to add fast ethernet slots as needed in the physical section), Switch 2950-24, switch-pt, and accesspoint-PT.
-3. You must assign static IP addresses to all PCs.
-4. You must use CLI to configure RIP on the routers, but if you find it too difficult, you are allowed to use the GUI.
-5. You can modify the web on the server. Alternatively, you can use my code from RIP with a Web Server.pkt in the server configuration section.
+
+1. Use **Wi-Fi** and **Ethernet** as needed to connect IoT devices.
+2. Configure a **server** to handle data from IoT devices.
+3. Ensure each device has a unique IP address.
+4. Use **MQTT or HTTP** as the communication protocol if possible.
+5. Use **CLI** or **GUI** in Packet Tracer to configure the devices.
+6. Ensure each device can be controlled from a **smartphone or laptop** connected to the network.
+
+---
 
 # How to Run/Cara Menjalankannya
 
 ## Indonesia:
-Instal [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) dan kemudian Anda dapat membuka [RIP dengan Web Server.pkt](https://github.com/xurobaebae/cisco/blob/main/RIP%20with%20Cisco%20Packet%20Tracer/main%20file/RIP%20with%20a%20Web%20Server.pkt).
+
+Instal [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) dan kemudian Anda dapat membuka [projek-IoT-dengan-packet-tracer.pkt](https://github.com/rakasatriaefendi/cisco/blob/c8bfe1f1ac6465fddb865ed685e1674b3ac965e5/Projek-IoT-dengan-packet-tracer/projek-IoT-dengan-packet-tracer.pkt).
 
 ## English:
-Install [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) and then you can open the [RIP dengan Web Server.pkt](https://github.com/xurobaebae/cisco/blob/main/RIP%20with%20Cisco%20Packet%20Tracer/main%20file/RIP%20with%20a%20Web%20Server.pkt).
+
+Instal [Cisco Packet Tracer](https://www.netacad.com/cisco-packet-tracer) dan kemudian Anda dapat membuka [projek-IoT-dengan-packet-tracer.pkt](https://github.com/rakasatriaefendi/cisco/blob/c8bfe1f1ac6465fddb865ed685e1674b3ac965e5/Projek-IoT-dengan-packet-tracer/projek-IoT-dengan-packet-tracer.pkt).
 
